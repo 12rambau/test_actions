@@ -8,10 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
       - name: run creation script 
-        run: python test.py
+        run: echo "toto" > filename.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: filename
+          path: filename.txt
     
     

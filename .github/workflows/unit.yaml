@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: run creation script 
-        run: echo "toto" > filename.txt
+        run: echo "tata" > filename.txt
       - uses: actions/upload-artifact@v4
         with:
           name: filename
